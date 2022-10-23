@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html data-theme="autumn" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SFS's Portfolio</title>
+        <!-- TailwindCSS CDN --> 
+          <script src="https://cdn.tailwindcss.com"></script>
+        <!-- TailwindCSS CDN --> 
+      
+        <!-- Daisy UI CDN -->
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <!-- Daisy UI CDN -->
+        
+        <!-- Font Awesome CDN -->
+          <script src="https://kit.fontawesome.com/4951b7ad3b.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome CDN -->
+        
+        <!-- Email JS CDN -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+          </script>
+        
+          <script type="text/javascript">
+              ( function() {
+                  emailjs.init("Ms4VIAJte_O58-BI8");
+              }) ();
+          </script>
+        <!-- JS Email CDN -->
+      </head>
+<body>
+    <!-- Navbar Starts Here-->
+    <nav class="sticky top-0 z-50">
+        <div class="navbar bg-teal-50 p-4">
+            <div class="flex-1">
+                <div class="avatar">
+                    <div class="ml-5 w-14 rounded-full ring ring-black ring-offset-base-100 ring-offset-1">
+                        <img src="images/me.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="flex-none ">
+                <ul class="menu menu-horizontal pr-10">
+                    <li class="hover:bg-cyan-100"><a href="/#about">About</a></li>
+                    <li class="hover:bg-cyan-100"><a href="/#resume">Resume</a></li>
+                    <li class="hover:bg-cyan-100"> <a href="/#portfolio">Portfolio</a></li>
+                    <li class="hover:bg-cyan-100"><a href="/#contact">Contact</a></li>
+                </ul>
+                <ul class="ml-10 menu menu-horizontal p-0">
+                    <li class="hover:bg-cyan-100"><a href="https://github.com/sfshovon"> <i class="fa-brands fa-github"></i></a></li>
+                    <li class="hover:bg-cyan-100"><a href="https://www.linkedin.com/in/shahriar-ferdous-shovon/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends Here-->
+
+    <main class="px-6">
+    <!-- Home Section Starts Here-->
+    <section id="about" class="min-h-screen p-6 my-2 rounded-lg bg-teal-50">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="me-10">
+                <img src="images/me_2.png" class="max-w-sm h-1/5 rounded-lg shadow-xl"/>
+            </div>
+            <div class="mr-5">
+                <p class="text-3xl py-8">Welcome to <span class="font-bold"> SFS</span>'s  Portfolio</p>
+                <h1 class="text-6xl font-bold">Hi, I am <br>
+                    <span class="text-red-800 ">Shahriar Ferdous Shovon</span>
+                </h1>
+                <h1 class="text-2xl font-bold mt-4">Computer Sceience Engineer</h1>
+                <p class="py-6 text-xl text-justify"> <span class="font-bold"> "Drive yourself toward positivity; the outcome will be positive as well," </span>  is my personal belief. A CSE graduate who is passionate, hardworking, self-driven, adaptive, and able to work both independently and in a team. Seeking a position where the knowledge obtained will be utilized effectively and advance my professional career.</p>
+                <a href="/#contact">
+                    <button class="btn btn-primary">Contact Me</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Home Section Ends Here-->
+ 
+    <!-- Resume Section Starts Here-->
+    <section data-theme="business" id="resume" class="px-6 bg-teal-50 px-6 py-4 rounded-lg my-8">
+        <div class="flex-col text-grey-900 text-center">
+            <h1 class="text-5xl font-bold my-4 uppercase">My Resume</h1>
+        </div>
+
+        <div class="tabs tabs-boxed grid grid-cols-3">
+            <button class="btn border-none btn-neutral tab tab-active focus:bg-secondary" id="show-education" onclick="tabActive('education', 'show-education')">Education</button> 
+            <button class="btn border-none tab" id="show-experience" onclick="tabActive('experience', 'show-experience')">Experience</button>
+            <button class="btn border-none tab" id="show-skills" onclick="tabActive('skills', 'show-skills')">Skills</button> 
+        </div>
+
+        <div class="mt-10">
+
+            <div id="education" class="border-l-4 content">
+                <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-primary font-semibold  rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+                    <div class="absolute">2015-2017</div>
+                    <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute"></div>
+                    <div class="ml-44 w-2/3 flex flex-col px-12 py-6 bg-blue-200  text-secondary rounded drop-shadow-2xl mb-10 space-y-4 md:space-y-0">
+                        <div class="mb-6 flex items-center">
+                            <h1 class="text-2xl font-bold mr-10">BSC in Computer Science Engineering</h1>
+                            <h1 class="text-lg font-bold p-2 border-stone-700 border rounded-lg ml-20">3.86 / 4.00</h1>
+                        </div>
+                        <h2 class="text-lg">Department of Electrical and Computer Engineering,</h2>
+                        <h2 class="text-lg">North South University</h2>   
+                    </div>
+                </div>
+                <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-primary font-semibold  rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+                    <div class="absolute">2015-2017</div>
+                    <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute"></div>
+                    <div class="ml-44 w-2/3 flex flex-col px-12 py-6 bg-blue-200  text-secondary rounded drop-shadow-2xl mb-10 space-y-4 md:space-y-0">
+                        <div class="mb-6 flex items-center">
+                            <h1 class="text-2xl font-bold mr-10">Higher Secondary Certificate</h1>
+                            <h1 class="text-lg font-bold p-2 border-stone-700 border rounded-lg ml-44">4.83 / 5.00</h1> 
+                        </div>
+                        <h2 class="text-lg">Science Group</h2>
+                        <h2 class="text-lg">Birshrestha Noor Mohommad Public College
+                        </h2>    
+                    </div>
+                </div>
+                <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-primary font-semibold  rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+                    <div class="absolute">2013-2015</div>
+                    <div class="w-24 ml-20 h-1 bg-slate-500 z-0 absolute "></div>
+                    <div class="ml-44 w-2/3 flex flex-col px-12 py-6 bg-blue-200 text-secondary drop-shadow-2xl rounded mb-10 space-y-4 md:space-y-0">
+                        <div class="mb-6 flex items-center">
+                            <h1 class="text-2xl font-bold mr-10">Secondary School Certificate</h1>
+                            <h1 class="text-lg font-bold p-2 border-stone-700 border rounded-lg ml-44">5.00 / 5.00</h1> 
+                        </div>
+                        <h2 class="text-lg">Science Group</h2>
+                        <h2 class="text-lg">Motijheel Model High School and College</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="experience" class="border-l-4 content" style="display:none">
+                <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-primary font-semibold  rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+                    <div class="absolute">Feb 2022-Jun 2022</div>
+                    <div class="w-24 ml-36 h-1 bg-slate-500 z-0 absolute"></div>
+                    <div class="w-2/3 ml-60 flex flex-col px-12 py-6 bg-teal-100 text-neutral rounded mb-10 space-y-4 md:space-y-0">
+                        <div class="mb-6">
+                            <h1 class="text-2xl font-bold">Research Assistant</h1>
+                            <h2 class="text-lg">Department of Mathematics & Physics, North South University</h2>
+                        </div>
+                        <h2 class="text-lg font-bold">Roles</h2>
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-square-check mr-4"></i>Worked on Computational Fluid Dynamics (CFD)
+                            </li>
+                        </ul>      
+                    </div>
+                </div>
+                  
+                <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-primary font-semibold  rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+                    <div class="absolute">Jan 2022-May 2022</div>
+                    <div class="w-24 ml-36 h-1 bg-slate-500 z-0 absolute "></div>
+                    <div class="w-2/3 ml-60 flex flex-col px-12 py-6 bg-teal-100 text-neutral rounded mb-10 space-y-4 md:space-y-0">
+                        <div class="mb-6">
+                            <h1 class="text-2xl font-bold">Undergraduate Teaching Assistant</h1>
+                            <h2 class="text-lg">Department of Mathematics & Physics, North South University</h2>
+                        </div>
+                        <h2 class="text-lg font-bold">Roles</h2>
+                        <ul>
+                            <li>
+                            <i class="fa-regular fa-square-check mr-4"></i>Assisting teachers by evaluating assignments and providing help to students having trouble learning concepts
+                            </li>
+                        </ul>      
+                    </div>
+                </div>
+
+                <div class="transform transition relative hover:-translate-y-2 cursor-pointer flex items-center px-6 py-4 text-primary font-semibold  rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <div class="w-5 h-5 bg-primary absolute -left-2 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+                    <div class="absolute">Oct 2021-Jan 2022</div>
+                    <div class="w-24 ml-36 h-1 bg-slate-500 z-0 absolute "></div>
+                    <div class="w-2/3 ml-60 flex flex-col px-12 py-6 bg-teal-100 text-neutral rounded mb-10 space-y-4 md:space-y-0">
+                        <div class="mb-6">
+                            <h1 class="text-2xl font-bold">Undergraduate Teaching Assistant</h1>
+                            <h2 class="text-lg">Department of History & Philosophy, North South University</h2>
+                        </div>
+                        <h2 class="text-lg font-bold">Roles</h2>
+                        <ul>
+                            <li><i class="fa-regular fa-square-check mr-4"></i>Assisting teachers in academic activities</li>
+                        </ul>      
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="relative content" style="display:none">
+                <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 52%">
+                </div>
+                <div class="grid grid-cols-2 space-x-10 flex items-center">
+                <div class="border text-center">
+                    <div class="flex flex-col mb-4">
+                        <h3 class="font-bold">Javascript</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="text center font-bold">Python</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="text center font-bold">C</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="text center font-bold">C++</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="text center font-bold">Java</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                </div>
+                <h1 class="text-2xl font-bold mb-4">Programming Languages</h1>
+                <h1 class="text-2xl font-bold mb-4 text-right">Front-end</h1>
+                <div class="border text-center"">
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">HTML</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">CSS</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">Bootstrap</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">TailwindCSS</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">DaisyUI</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">React.JS</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                </div>
+                <div class="border text-center"">
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">MySQL</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">Firebase</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">MongoDB</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">Django</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">Node.JS</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <h3 class="relative font-bold">Express.JS</h3>
+                        <progress class="progress progress-success h-4" value="100" max="100"></progress>
+                    </div> 
+                </div>
+                <h1 class="text-2xl font-bold mb-4">Back-end</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Resume Section Ends Here-->
+
+    <!-- Portfolio Section Starts Here-->
+    <section data-theme="dracula" id="portfolio" class="min-h-screen bg-teal-50 px-6 py-4 rounded-lg   my-8">
+        <div class="flex-col text-grey-900 text-center">
+            <h1 class="text-5xl font-bold mt-4">Portfolio</h1>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-4 mt-6 md:grid-cols-6 sm:grid-cols-12">
+            <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img class="rounded-xl" src="/images/simple-blog.jpg"  alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Simple Blog</h2>
+                    <p>A simple blog writing app that enables users to create,read and delete blogs</p>
+                    <div class="card-actions justify-end">
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img class="rounded-xl" src="/images/simple-blog.jpg"  alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Simple Blog</h2>
+                    <p>A simple blog writing app that enables users to create,read and delete blogs</p>
+                    <div class="card-actions justify-end">
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img class="rounded-xl" src="/images/simple-blog.jpg"  alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Simple Blog</h2>
+                    <p>A simple blog writing app that enables users to create,read and delete blogs</p>
+                    <div class="card-actions justify-end">
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img class="rounded-xl" src="/images/simple-blog.jpg"  alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Simple Blog</h2>
+                    <p>A simple blog writing app that enables users to create,read and delete blogs</p>
+                    <div class="card-actions justify-end">
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img class="rounded-xl" src="/images/simple-blog.jpg"  alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Simple Blog</h2>
+                    <p>A simple blog writing app that enables users to create,read and delete blogs</p>
+                    <div class="card-actions justify-end">
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl image-full">
+                <figure><img class="rounded-xl" src="/images/simple-blog.jpg"  alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Simple Blog</h2>
+                    <p>A simple blog writing app that enables users to create,read and delete blogs</p>
+                    <div class="card-actions justify-end">
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button class="btn btn-secondary text-base-300">Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Portfolio Section Ends Here-->
+
+    <!-- Contact Section Starts Here-->
+    <section data-theme="winter" id="contact" class="hero min-h-screen bg-teal-50 px-6 py-4 rounded">
+        <div class="my-5">
+            <h1 class="text-5xl font-bold text-grey-900 text-center uppercase">Contact Me</h1>
+            <div class="hero-content grid grid-cols-3 h-auto mt-16">
+               
+                <div class="card flex-shrink-0 shadow-2xl bg-teal-700 col-span-2">
+                    <div class="card-body grid grid-cols-2">
+                        <div class="form-control col-span-2 ">
+                            <label class="label">
+                                <span class="label-text text-neutral-content">Name</span>
+                            </label>
+                            <input type="text" id="name" class="input drop-shadow-2xl bg-base-300 focus:outline-none focus:border-sky-300 focus:ring-sky-300" required/>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-neutral-content">Phone Number</span>
+                            </label>
+                            <input id="phone" type="text" class="input drop-shadow-2xl bg-base-300 focus:outline-none focus:border-sky-300 focus:ring-sky-300" />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-neutral-content">Email</span>
+                            </label>
+                            <input id="email" type="text" class="input drop-shadow-2xl bg-base-300 focus:outline-none focus:border-sky-300 focus:ring-sky-300" required/>
+                        </div>
+                        <div class="form-control col-span-2">
+                            <label class="label">
+                                <span class="label-text text-neutral-content">Subject</span>
+                            </label>
+                            <input id="subject" type="text" class="input drop-shadow-2xl bg-base-300 focus:outline-none focus:border-sky-300 focus:ring-sky-300" required/>
+                        </div>
+                        <div class="form-control col-span-2">
+                            <label class="label">
+                                <span class="label-text text-neutral-content">Message</span>
+                            </label>
+                            <textarea id="message" class="textarea drop-shadow-2xl input bg-base-300 focus:outline-none focus:border-sky-300 focus:ring-sky-300" required></textarea>
+                        </div>
+                        <div class="form-control w-36 ml-auto col-span-2 mt-4">
+                            <button class="btn btn-success" onclick="sendEmail()">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-blue-200 shadow-xl text-center lg:text-left h-full">
+                    <figure class="px-10 pt-5">
+                        <img src="images/contact.png" alt="Contact Image" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-grey-800 mb-4">Get in Touch</h2>
+                        <div class="card-actions">
+                            <button class="btn px-4 py-2">
+                                <i class="fa-regular fa-paper-plane text-primary mr-4"></i>
+                                <p class="lowercase">sfs.shovon@gmail.com</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends Here -->
+    </main>   
+    <!-- JS Scripts-->
+        <script src="/js/index.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- JS Scripts-->
+</body>
+</html>

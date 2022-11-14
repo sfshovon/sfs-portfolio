@@ -1,3 +1,11 @@
+// Navbar Menu Toggling
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+  button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+//Resume Active Tabs
 const activeTab = (content, tab) => {
   let i, contents, activeTabs;
   contents = document.getElementsByClassName("content"); //get all the content
@@ -13,6 +21,7 @@ const activeTab = (content, tab) => {
   currentTab.classList.add('tab-active');
 }
 
+//Send Email
 const sendEmail = () => {
   let params = {
       name: document.getElementById('name').value,

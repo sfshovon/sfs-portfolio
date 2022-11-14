@@ -14,7 +14,7 @@
         <!-- Daisy UI CDN -->
         
         <!-- Font Awesome CDN -->
-          <script src="https://kit.fontawesome.com/4951b7ad3b.js" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/ddece61056.js" crossorigin="anonymous"></script>
         <!-- Font Awesome CDN -->
         
         <!-- Email JS CDN -->
@@ -27,59 +27,55 @@
               }) ();
           </script>
         <!-- JS Email CDN -->
+
+        <!--Navbar Scripts-->
+            <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <!--Navbar Scripts-->
+
       </head>
 <body>
-    <!-- Header Starts Here-->
-    <header class="bg-teal-50 sticky top-0 z-50 border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
-        <!-- Logo or Image -->
-        <div class="flex items-center justify-between mb-4 md:mb-0">
-            <div class="avatar">
-                <div class="mx-5 w-14 rounded-full ring ring-black ring-offset-base-100 ring-offset-1">
-                    <img src="images/me.jpg" />
-                </div>
-            </div>
+    <!-- Navbar Starts Here-->
+    <nav class="p-3 bg-teal-50 sticky top-0 z-50 shadow-md flex flex-wrap items-center justify-between w-full text-lg">
+        <!-- Logo or Image Starts Here-->
+        <div>
+            <a class="block box-border h-14 w-14 md:h-16 md:w-16 overflow-hidden rounded-full transform hover:scale-110" href="">
+                <img class="h-full w-full object-cover" src="images/me.jpg" alt="Logo">
+            </a>
         </div>
-        <!-- END Logo text or image -->
-        
-        <!-- Navbar Starts Here-->
-        <nav>
-          <ul class="list-reset md:flex md:items-center">
-            <li class="md:ml-4 hover:bg-violet-200 rounded-full p-2">
-                <a class="no-underline text-dark font-bold md:border-none md:mx-5 md:p-0 md:text-lg" href="/#about">
-                    About
-                </a>
-            </li>
-            <li class="md:ml-4 hover:bg-violet-200 rounded-full p-2">
-                <a class="no-underline text-dark font-bold md:border-none md:mx-5 md:p-0 md:text-lg" href="/#resume">
-                    Resume
-                </a>
-            </li>
-            <li class="md:ml-4 hover:bg-violet-200 rounded-full p-2">
-                <a class="no-underline text-dark font-bold md:border-none md:mx-5 md:p-0 md:text-lg" href="/#projects">
-                    Projects
-                </a>
-            </li>
-            <li class="md:ml-4 hover:bg-violet-200 rounded-full p-2">
-                <a class="no-underline text-dark font-bold md:border-none md:mx-5 md:p-0 md:text-lg" href="/#contact">
-                    Contact
-                </a>
-            </li>
-            <li class="md:ml-4 hover:bg-violet-200 rounded-full p-2">  
-                <a class="no-underline text-dark font-bold md:border-none md:mx-5 md:p-0 md:text-lg" href="https://github.com/sfshovon"> 
-                <i class="fa-brands fa-github"></i>
-                </a>
-            </li> 
-            <li class="md:ml-4 hover:bg-violet-200 rounded-full p-2">  
-                <a class="no-underline text-dark font-bold md:border-none md:mx-5 md:p-0 md:text-lg" href="https://www.linkedin.com/in/shahriar-ferdous-shovon">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Navbar Ends Here -->
-    </header>
-    <!-- Header Ends Here-->
+        <!-- Logo or Image Ends Here-->
 
+        <!-- Menu Icon Starts Here-->
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" iewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <!-- Menu Icon Ends Here-->
+        
+        <!-- Menu Items List Starts Here-->
+        <div id="menu" class="hidden w-full font-bold text-teal-900 text-center text-2xl flex flex-col items-center justify-center md:block md:w-auto md:text-lg md:relative md:text-teal-900 md:bg-transparent md:w-auto md:h-auto md:text-left">
+            <!-- hidden md:block font-bold text-teal-900 text-right text-3xl bg-gray-800 fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center md:text-lg md:relative md:text-teal-900 md:bg-transparent md:w-auto md:h-auto md:text-left -->
+            <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
+                <li class="md:border-r md:px-4 md:border-zinc-900">
+                    <a href="#about" class="transition ease-in-out duration-150 hover:bg-violet-200 rounded-full px-6 py-3">About</a></li>
+                <li class="md:border-r md:px-4 md:border-zinc-900">
+                    <a href="#resume" class="transition ease-in-out duration-150 hover:bg-violet-200 rounded-full px-6 py-3">Resume</a>
+                </li>
+                <li class="md:border-r md:px-4 md:border-zinc-900">
+                    <a href="#projects" class="transition ease-in-out duration-150 hover:bg-violet-200 rounded-full px-6 py-3">Projects</a>
+                </li>
+                <li class="md:border-r md:px-4 md:border-zinc-900">
+                    <a href="#contact" class="transition ease-in-out duration-150 hover:bg-violet-200 rounded-full px-6 py-3">Contact Me</a>
+                </li>
+                <li class="md:border-r md:px-4 md:border-zinc-900">
+                    <a class="transition ease-in-out duration-150 hover:bg-violet-200 rounded-full p-2" href="https://github.com/sfshovon" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                </li>
+                <li class="md:px-4">
+                    <a class="transition ease-in-out duration-150 hover:bg-violet-200 rounded-full p-2" href="https://www.linkedin.com/in/shahriar-ferdous-shovon" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                </li> 
+            </ul>
+        </div>
+        <!-- Menu Items List Ends Here-->
+    </nav>
+    <!-- Navbar Ends Here-->
     <main class="px-6">
     <!-- Home Section Starts Here-->
     <section id="about" class="min-h-screen p-6 my-2 rounded-lg bg-teal-50">
@@ -369,7 +365,7 @@
                     <img class="rounded-lg h-44 px-2 mt-2" src="/images/simple-js-api-weather-app.jpg"  alt="Project Image"/>
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Weather App</h2>
+                  <h2 class="card-title">Daily Forecast</h2>
                   <p>
                     A simple weather app using HTML, CSS and openAPI along with JavaScript. 
                   </p>
@@ -393,7 +389,7 @@
                     <img class="rounded-lg h-44 px-2 mt-2" src="/images/simple-js-todo-app.jpg"  alt="Project Image"/>
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Regular Agenda</h2>
+                  <h2 class="card-title">Regular Work Tracker</h2>
                   <p>
                     A simple to-do list using JavaSript with local storage. 
                   </p>
@@ -476,6 +472,29 @@
                             </button>
                         </a>
                         <a href="https://simple-react-js-mui-social-media.netlify.app" target="_blank">
+                            <button class="btn btn-success text-base-300 gap-2">
+                                <i class="fa-solid fa-laptop-code"></i> Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-72 glass shadow-xl mx-auto md:w-96">
+                <figure>
+                    <img class="rounded-lg h-44 px-2 mt-2" src="/images/simple-react-js-restaurant.jpg"  alt="Project Image"/>
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Yum Cha District</h2>
+                  <p>
+                    A simple respossive React JS reestaurant using React Router, CustomLinks, CustomHooks, TaildwindCSS, DaisyUI, local storage along with Firebase Authetication.
+                  </p>
+                    <div class="card-actions justify-end">
+                        <a href="https://github.com/sfshovon/simple-react-js-restaurant" target="_blank">
+                            <button class="btn btn-info text-base-300 gap-2">
+                                <i class="fa-brands fa-github"></i> Code
+                            </button>
+                        </a>
+                        <a href="https://simple-react-js-restaurant.netlify.app" target="_blank">
                             <button class="btn btn-success text-base-300 gap-2">
                                 <i class="fa-solid fa-laptop-code"></i> Live Demo
                             </button>
